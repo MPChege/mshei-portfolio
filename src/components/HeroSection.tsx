@@ -29,28 +29,31 @@ const HeroSection = () => {
             <h1 className="heading-xl mb-6 bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">
               Software Engineer
             </h1>
-            <div className="heading-md mb-8 text-muted-foreground">
+            <div className="heading-md mb-4 text-muted-foreground">
               Fullstack Developer | AI & Sustainability Tech Enthusiast
+            </div>
+            <div className="text-lg mb-8 text-accent-blue font-semibold">
+              Founder of <span className="text-primary">Nexus Swift</span> - Innovation Hub
             </div>
           </div>
 
           {/* Bio */}
           <div className="animate-fade-in mb-12 max-w-2xl mx-auto" style={{ animationDelay: '0.4s' }}>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Passionate about building impactful digital systems that drive innovation in AI and sustainability. 
-              Creating solutions that matter for businesses and communities.
+              Building the future through <span className="text-primary font-semibold">Nexus Swift</span> - my innovation hub where 
+              cutting-edge technology meets real-world impact. Specializing in AI-driven solutions and sustainability tech.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="animate-fade-in flex flex-col sm:flex-row gap-4 justify-center mb-12" style={{ animationDelay: '0.6s' }}>
             <Button variant="hero" size="lg" className="group">
-              View Projects
+              Explore Projects
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline" size="lg" className="group">
               <Mail className="mr-2" />
-              Contact Me
+              Get In Touch
             </Button>
             <Button variant="ghost" size="lg" className="group">
               <Download className="mr-2" />

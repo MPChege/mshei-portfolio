@@ -18,6 +18,7 @@ const Navigation = () => {
     { name: "About", href: "#about", icon: <User className="w-4 h-4" /> },
     { name: "Skills", href: "#skills", icon: <Code className="w-4 h-4" /> },
     { name: "Projects", href: "#projects", icon: <Briefcase className="w-4 h-4" /> },
+    { name: "Open Source", href: "#opensource", icon: <Code className="w-4 h-4" /> },
     { name: "Experience", href: "#experience", icon: <Award className="w-4 h-4" /> },
     { name: "Contact", href: "#contact", icon: <Mail className="w-4 h-4" /> },
   ];
@@ -67,11 +68,11 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
-              variant="hero" 
+              variant="outline" 
               size="sm"
               onClick={() => scrollToSection("#contact")}
             >
-              Hire Me
+              Contact
             </Button>
           </div>
 
@@ -102,11 +103,11 @@ const Navigation = () => {
                   </button>
                 ))}
                 <Button 
-                  variant="hero" 
+                  variant="outline" 
                   className="mt-4"
                   onClick={() => scrollToSection("#contact")}
                 >
-                  Hire Me
+                  Contact
                 </Button>
               </div>
             </div>

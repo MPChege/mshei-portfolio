@@ -213,7 +213,7 @@ const ContactSection = () => {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full group gradient-hero text-white hover:opacity-90 hover:scale-[1.02] transition-all duration-300"
+                    className="w-full group gradient text-white hover:opacity-90 hover:scale-[1.02] transition-all duration-300"
                   >
                     <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                     Send Message
@@ -226,17 +226,17 @@ const ContactSection = () => {
 
         {/* Additional CTA */}
         <div className="text-center mt-16 p-8 rounded-2xl gradient-accent border border-card-border">
-          <h3 className="heading-sm mb-4">Ready to Start Your Project?</h3>
+          <h3 className="heading-sm mb-4">Let's Build Something Amazing</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Whether you need a full-stack application, mobile solution, or AI integration, 
-            I'm here to help bring your vision to life with cutting-edge technology.
+            Whether you need a full-stack application, AI integration, or want to discuss Nexus Swift partnerships, 
+            I'm here to turn innovative ideas into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
+            <Button variant="outline" size="lg">
               Schedule a Call
             </Button>
             <Button variant="outline" size="lg">
-              View Portfolio
+              View Nexus Swift
             </Button>
           </div>
         </div>
