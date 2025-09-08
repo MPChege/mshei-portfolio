@@ -13,20 +13,20 @@ const EnhancedProjects = () => {
     {
       title: "TallyCheck",
       url: "https://www.tallycheck.co.ke",
-      description: "Advanced financial tracking and accounting platform designed for Kenyan businesses with automated bookkeeping and compliance features.",
+      description: "Attendance automation platform designed for Kenyan universities. Revolutionizes student check-ins using Bluetooth technology and QR codes, eliminating classroom disruptions while providing real-time data and timestamped records for accurate attendance tracking.",
       icon: <Calculator className="w-6 h-6" />,
       gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-      category: "FinTech",
+      category: "EdTech",
       categoryColor: "from-emerald-100 to-emerald-200",
       categoryText: "text-emerald-700"
     },
     {
-      title: "Madaraka Hub",
+      title: "Madaraka Schools",
       url: "https://madaraka-hub-54.vercel.app",
-      description: "Comprehensive community platform connecting Kenyan citizens with government services and civic engagement opportunities.",
+      description: "Comprehensive school management system for Nairobi Campus. Features student enrollment, academic records, fee management, and parent-teacher communication tools to streamline educational administration.",
       icon: <Building2 className="w-6 h-6" />,
       gradient: "from-violet-500 via-purple-500 to-indigo-500",
-      category: "GovTech",
+      category: "School Management",
       categoryColor: "from-violet-100 to-violet-200",
       categoryText: "text-violet-700"
     },
@@ -177,7 +177,7 @@ const EnhancedProjects = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            Innovative solutions spanning fintech, government services, sustainability, and community platforms.
+            Innovative solutions spanning education technology, school management systems, sustainability, and community platforms.
           </motion.p>
         </motion.div>
 
