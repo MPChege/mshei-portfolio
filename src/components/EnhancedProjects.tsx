@@ -42,7 +42,7 @@ const EnhancedProjects = () => {
     },
     {
       title: "Carbon Corp ESG",
-      url: "https://carbon-corp-esg.vercel.app",
+      url: "https://www.carboncorp.cc",
       description: "Enterprise ESG (Environmental, Social, and Governance) platform for sustainable business practices and carbon footprint management.",
       icon: <Leaf className="w-6 h-6" />,
       gradient: "from-green-500 via-emerald-500 to-teal-500",
