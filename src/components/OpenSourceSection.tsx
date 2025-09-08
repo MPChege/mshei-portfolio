@@ -6,48 +6,52 @@ import { Github, ExternalLink, Star, GitFork, Coffee, TrendingUp, Award, Zap } f
 const OpenSourceSection = () => {
   const contributions = [
     {
-      name: "nexus-ui-kit",
-      description: "Comprehensive React component library with 50+ modern components, built for Nexus Swift projects and open-sourced for the community.",
-      stars: 247,
-      forks: 34,
+      name: "sustainability-tracker",
+      description: "Open-source carbon footprint calculation tool for environmental impact assessment and sustainability tracking.",
+      stars: 12,
+      forks: 4,
+      language: "Python",
+      status: "Active",
+      color: "from-accent-green to-accent-blue",
+      url: "https://github.com/MPChege/sustainability-tracker"
+    },
+    {
+      name: "nexus-components",
+      description: "React component library with modern UI components, built for Nexus Swift projects and open-sourced for the community.",
+      stars: 8,
+      forks: 3,
       language: "TypeScript",
       status: "Active",
-      color: "from-accent-blue to-accent-purple"
+      color: "from-accent-blue to-accent-purple",
+      url: "https://github.com/MPChege/nexus-components"
     },
     {
-      name: "sustainability-calculator",
-      description: "Open-source carbon footprint calculation engine with ML models for accurate environmental impact assessment.",
-      stars: 189,
-      forks: 28,
-      language: "Python",
-      status: "Maintained",
-      color: "from-accent-green to-accent-blue"
-    },
-    {
-      name: "react-native-attendance",
-      description: "Expo-compatible attendance tracking solution with biometric integration and offline support.",
-      stars: 156,
-      forks: 22,
+      name: "attendance-mobile",
+      description: "React Native attendance tracking solution with offline support and data synchronization.",
+      stars: 6,
+      forks: 2,
       language: "JavaScript",
-      status: "Active",
-      color: "from-accent-pink to-accent-purple"
+      status: "Maintained",
+      color: "from-accent-pink to-accent-purple",
+      url: "https://github.com/MPChege/attendance-mobile"
     },
     {
-      name: "ai-travel-optimizer",
-      description: "Machine learning algorithms for travel route optimization and cost prediction, extracted from Magnolia Travels.",
-      stars: 134,
-      forks: 19,
+      name: "travel-optimizer",
+      description: "Travel route optimization algorithms and cost calculation utilities for efficient trip planning.",
+      stars: 4,
+      forks: 1,
       language: "Python",
       status: "Beta",
-      color: "from-primary to-accent-pink"
+      color: "from-primary to-accent-pink",
+      url: "https://github.com/MPChege/travel-optimizer"
     }
   ];
 
   const achievements = [
-    { icon: <Star className="w-5 h-5" />, label: "GitHub Stars", value: "1.2K+", color: "text-yellow-500" },
-    { icon: <GitFork className="w-5 h-5" />, label: "Forks", value: "180+", color: "text-blue-500" },
-    { icon: <Coffee className="w-5 h-5" />, label: "Contributors", value: "45+", color: "text-green-500" },
-    { icon: <TrendingUp className="w-5 h-5" />, label: "Weekly Downloads", value: "2.5K+", color: "text-purple-500" }
+    { icon: <Star className="w-5 h-5" />, label: "GitHub Stars", value: "30+", color: "text-yellow-500" },
+    { icon: <GitFork className="w-5 h-5" />, label: "Forks", value: "10+", color: "text-blue-500" },
+    { icon: <Coffee className="w-5 h-5" />, label: "Contributors", value: "5+", color: "text-green-500" },
+    { icon: <TrendingUp className="w-5 h-5" />, label: "Weekly Downloads", value: "50+", color: "text-purple-500" }
   ];
 
   return (
@@ -59,8 +63,8 @@ const OpenSourceSection = () => {
         <div className="text-center mb-16">
           <h2 className="heading-lg mb-6 text-foreground">Open Source Contributions</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Giving back to the developer community with tools and libraries that power modern applications. 
-            Building in public, sharing knowledge, and fostering innovation.
+            Contributing to the developer community with open-source tools and libraries. 
+            Building in public, sharing knowledge, and preparing for the future Nexus Swift ecosystem.
           </p>
         </div>
 
@@ -130,14 +134,18 @@ const OpenSourceSection = () => {
                     variant="outline" 
                     size="sm" 
                     className="flex-1 group/btn hover:bg-primary hover:text-primary-foreground"
+                    asChild
                   >
-                    <Github className="w-4 h-4 mr-2" />
-                    View Code
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      View Code
+                    </a>
                   </Button>
                   <Button 
                     variant="default" 
                     size="sm" 
                     className="flex-1 group/btn"
+                    disabled
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Documentation
@@ -159,15 +167,17 @@ const OpenSourceSection = () => {
               <h3 className="heading-sm">Join the Community</h3>
             </div>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Interested in contributing to Nexus Swift's open source ecosystem? 
+              Interested in contributing to the future Nexus Swift open source ecosystem? 
               We welcome developers, designers, and innovators to help shape the future of technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="group">
-                <Github className="mr-2" />
-                View GitHub Profile
+              <Button variant="hero" size="lg" className="group" asChild>
+                <a href="https://github.com/MPChege" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2" />
+                  View GitHub Profile
+                </a>
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" disabled>
                 Contribution Guidelines
               </Button>
             </div>

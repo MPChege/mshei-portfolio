@@ -5,9 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: "#", label: "GitHub" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Mail className="w-5 h-5" />, href: "mailto:hello@softwareengineer.dev", label: "Email" },
+    { icon: <Github className="w-5 h-5" />, href: "https://github.com/MPChege", label: "GitHub" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/mark-paul-chege-395b01269/", label: "LinkedIn" },
+    { icon: <Mail className="w-5 h-5" />, href: "mailto:markpaulchege7@gmail.com", label: "Email" },
   ];
 
   const quickLinks = [
@@ -23,22 +23,22 @@ const Footer = () => {
       {/* Background Effects */}
       <div className="absolute inset-0 gradient-accent opacity-10"></div>
       
-      <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-6 py-12 relative z-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent-purple flex items-center justify-center text-white font-bold text-xl">
-                SE
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent-purple flex items-center justify-center text-white font-bold text-lg">
+                M
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground">Software Engineer</h3>
-                <p className="text-sm text-muted-foreground">Full-stack Developer & AI Enthusiast</p>
+                <h3 className="text-lg font-bold text-foreground">Mark Chege</h3>
+                <p className="text-sm text-muted-foreground">Full-stack Developer & Co-founder</p>
               </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed max-w-md mb-6">
-              Passionate about creating innovative solutions that drive positive impact through 
-              technology, sustainability, and AI-powered applications.
+            <p className="text-muted-foreground leading-relaxed max-w-md mb-4 text-sm">
+              Passionate about creating innovative solutions through technology, 
+              sustainability, and preparing to co-found Nexus Swift.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -82,28 +82,28 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Get In Touch</h4>
-            <div className="space-y-3">
+            <div className="space-y-2">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                hello@softwareengineer.dev
+                markpaulchege7@gmail.com
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                +1 (555) 123-4567
+                +254 711 947 327
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                Available Worldwide
+                Nairobi, Kenya
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-8 border-t border-border">
+        <div className="pt-6 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Software Engineer Portfolio. All rights reserved.
+              © {currentYear} Mark Chege Portfolio. All rights reserved.
             </p>
             <p className="text-sm text-muted-foreground flex items-center gap-1">
               Made with <Heart className="w-4 h-4 text-primary fill-current" /> and modern web technologies

@@ -15,11 +15,11 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image with Nexus Swift Logo */}
           <div className="mb-8 flex justify-center">
             <div className="w-40 h-40 md:w-48 md:h-48 rounded-full executive-shadow gradient-card border-4 border-white flex items-center justify-center animate-scale-in">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple flex items-center justify-center text-white text-6xl font-bold">
-                SE
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple flex items-center justify-center text-white text-4xl font-bold">
+                MC
               </div>
             </div>
           </div>
@@ -27,21 +27,23 @@ const HeroSection = () => {
           {/* Name and Title */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h1 className="heading-xl mb-6 bg-gradient-to-r from-primary via-accent-purple to-accent-blue bg-clip-text text-transparent">
-              Software Engineer
+              Mark Chege
             </h1>
             <div className="heading-md mb-4 text-muted-foreground">
-              Fullstack Developer | AI & Sustainability Tech Enthusiast
+              Software Engineer | Fullstack Developer | AI & Sustainability Tech Enthusiast
             </div>
-            <div className="text-lg mb-8 text-accent-blue font-semibold">
-              Founder of <span className="text-primary">Nexus Swift</span> - Innovation Hub
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <span className="text-lg text-muted-foreground">Co-Founder of</span>
+              <span className="text-lg font-bold text-red-500">NEXUS SWIFT</span>
             </div>
           </div>
 
           {/* Bio */}
           <div className="animate-fade-in mb-12 max-w-2xl mx-auto" style={{ animationDelay: '0.4s' }}>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Building the future through <span className="text-primary font-semibold">Nexus Swift</span> - my innovation hub where 
-              cutting-edge technology meets real-world impact. Specializing in AI-driven solutions and sustainability tech.
+              Building the future through <span className="text-primary font-semibold">Nexus Swift</span> - an innovative company 
+              where cutting-edge technology meets real-world impact. Co-founding this venture with a vision to create 
+              AI-driven solutions and sustainability tech that transforms industries.
             </p>
           </div>
 

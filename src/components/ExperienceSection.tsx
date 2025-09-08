@@ -5,64 +5,94 @@ import { Calendar, MapPin, Briefcase, Award, Code, Lightbulb } from "lucide-reac
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "Tech Innovations Ltd",
-      period: "2023 - Present",
-      location: "Remote",
-      type: "Full-time",
-      description: "Leading development of AI-powered sustainability solutions and carbon tracking platforms. Architecting scalable systems for ESG monitoring and environmental impact analysis.",
+      title: "Software Engineer & Co-Founder",
+      company: "Nexus Swift",
+      period: "2025 – Present",
+      location: "Nairobi, Kenya",
+      type: "Co-Founder",
+      description: "Preparing to launch an innovation-driven company focused on AI and sustainability tech. Leading early-stage product strategy, architecture design, and scalable solution development.",
       achievements: [
-        "Built CarbonCorp platform serving 50+ enterprises",
-        "Reduced carbon calculation processing time by 60%",
-        "Led team of 4 developers in agile environment"
+        "Building solutions that bridge sustainability with real-world enterprise challenges",
+        "Leading product strategy and technical architecture design",
+        "Developing AI-powered sustainability solutions for enterprises"
       ],
-      tech: ["React", "Node.js", "Python", "AI/ML", "PostgreSQL"],
+      tech: ["React", "Node.js", "Python", "AI/ML", "Sustainability Tech"],
       color: "from-accent-green to-accent-blue"
     },
     {
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Co",
-      period: "2022 - 2023",
-      location: "Hybrid",
-      type: "Full-time",
-      description: "Developed mobile-first applications for education and business sectors. Specialized in React Native development and real-time data synchronization.",
+      title: "Senior Full-Stack Developer",
+      company: "CarbonCorp (Contract Project)",
+      period: "2024 – 2025",
+      location: "Remote",
+      type: "Contract",
+      description: "Developed CarbonCorp ESG platform, serving enterprises in carbon tracking and ESG monitoring. Architected scalable systems for sustainability reporting.",
       achievements: [
-        "Launched T-Check attendance system for 20+ schools",
-        "Improved mobile app performance by 40%",
-        "Implemented real-time features using WebSocket"
+        "Improved carbon calculation efficiency by 60%",
+        "Built scalable ESG monitoring platform for enterprises",
+        "Architected systems handling complex sustainability data"
       ],
-      tech: ["React Native", "Supabase", "TypeScript", "Node.js"],
+      tech: ["React", "Node.js", "Python", "AI/ML", "PostgreSQL"],
       color: "from-accent-blue to-accent-purple"
     },
     {
-      title: "Software Developer",
-      company: "StartupTech",
-      period: "2021 - 2022",
-      location: "On-site",
-      type: "Full-time",
-      description: "Developed web applications for various clients including travel booking systems and business management platforms. Focused on user experience and performance optimization.",
+      title: "Full-Stack Developer",
+      company: "T-Check Attendance System",
+      period: "2025",
+      location: "Remote",
+      type: "Project",
+      description: "Built and deployed T-Check, a real-time mobile-first attendance system for schools and universities. Designed APIs and real-time features for seamless student tracking.",
       achievements: [
-        "Delivered 10+ client projects on time",
-        "Improved website loading speeds by 50%",
-        "Mentored 2 junior developers"
+        "Deployed across 25+ educational institutions",
+        "Built real-time tracking with 99.9% uptime",
+        "Implemented mobile-first responsive design"
       ],
-      tech: ["React", "JavaScript", "Express.js", "MongoDB"],
+      tech: ["React Native", "Supabase", "TypeScript", "Node.js"],
       color: "from-accent-pink to-accent-purple"
     },
     {
+      title: "Software Developer",
+      company: "Gema Loyalty Program",
+      period: "2022 – 2023",
+      location: "Hybrid",
+      type: "Full-time",
+      description: "Developed a loyalty and rewards platform for retail and SMEs. Focused on user engagement, analytics, and scalable backend systems.",
+      achievements: [
+        "Delivered customer-facing apps and dashboards with optimized performance",
+        "Built analytics system processing 100K+ daily transactions",
+        "Improved user engagement by 45% through gamification features"
+      ],
+      tech: ["React", "Node.js", "MongoDB", "Supabase"],
+      color: "from-primary to-accent-pink"
+    },
+    {
       title: "Junior Developer",
+      company: "StartupTech",
+      period: "2021 – 2022",
+      location: "On-site",
+      type: "Full-time",
+      description: "Delivered 10+ client projects including travel booking and business management platforms. Improved performance and user experience on web applications.",
+      achievements: [
+        "Delivered 10+ client projects on time",
+        "Improved website loading speeds by 50%",
+        "Mentored junior interns in React and modern JavaScript"
+      ],
+      tech: ["React", "Express.js", "JavaScript", "MongoDB"],
+      color: "from-accent-blue to-accent-green"
+    },
+    {
+      title: "Trainee Developer",
       company: "Code Academy",
-      period: "2020 - 2021",
+      period: "2020 – 2021",
       location: "Remote",
       type: "Part-time",
-      description: "Started career building educational platforms and learning management systems. Gained experience in modern web technologies and agile development practices.",
+      description: "Built educational platforms and early-stage LMS systems. Contributed to open source projects and completed advanced training in React and Node.js.",
       achievements: [
-        "Contributed to 5+ open source projects",
-        "Completed advanced React and Node.js certifications",
+        "Contributed to open source projects",
+        "Completed advanced training in React and Node.js",
         "Built personal portfolio attracting first clients"
       ],
       tech: ["HTML", "CSS", "JavaScript", "React", "Git"],
-      color: "from-primary to-accent-pink"
+      color: "from-accent-purple to-accent-blue"
     }
   ];
 
@@ -74,37 +104,39 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <div className="py-16 sm:py-20 lg:py-24 relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent-blue via-accent-purple to-accent-green"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-slate-50 via-white to-gray-100"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="heading-lg mb-6 text-foreground">Professional Experience</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+            Professional Experience
+          </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             A journey of continuous growth in software engineering, sustainability technology, 
             and innovative solution development across diverse industries.
           </p>
         </div>
 
         {/* Experience Timeline */}
-        <div className="max-w-4xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-12 sm:mb-16">
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent-blue to-accent-purple"></div>
+            <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500 via-blue-500 to-purple-500"></div>
 
-            {experiences.map((exp, index) => (
-              <div 
-                key={exp.company}
-                className="relative pl-20 pb-12 animate-slide-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Timeline Dot */}
-                <div className={`absolute left-6 w-5 h-5 rounded-full bg-gradient-to-br ${exp.color} border-4 border-background shadow-lg`}></div>
+            <div className="">
+              {experiences.map((exp, index) => (
+                <div 
+                  key={exp.company}
+                  className="relative pl-16 sm:pl-20 pb-8 sm:pb-12"
+                >
+                  {/* Timeline Dot */}
+                  <div className={`absolute left-4 sm:left-6 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br ${exp.color} border-4 border-white shadow-lg`}></div>
 
-                <Card className="gradient-card border-card-border interactive-card">
+                  <Card className="bg-white/80 backdrop-blur-lg border-0 shadow-lg hover:shadow-xl transition-all duration-500 rounded-3xl overflow-hidden hover:scale-105 hover:-translate-y-2">
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                       <div>
@@ -166,9 +198,10 @@ const ExperienceSection = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              </div>
-            ))}
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -196,7 +229,7 @@ const ExperienceSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
